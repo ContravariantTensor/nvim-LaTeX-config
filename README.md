@@ -1,7 +1,7 @@
 # nvim-LaTeX-config
 An nvim setup for writing, compiling, and displaying LaTeX
 
-a huge shoutout to Gilles Castel - castel.dev, phd, this is his snippets file with some extras (greek letters, lorentz matrices, e.t.c.) and some edits.
+A huge shoutout to Gilles Castel - castel.dev, phd, this is his snippets file with some extras (greek letters, lorentz matrices, e.t.c.) and some edits.
 castel.dev has a setup on how to do extra things like switching layouts, even doing so based on a timetable. It's fantastic, and you should look there first.
 
 This setup requires two plugins as-is:
@@ -17,8 +17,8 @@ You can use whatever plugin manager you like. I use vim-plug : https://github.co
 package-wise, on a linux system, you will need: \
 neovim, duh \
 python-pynvim, needed by ultisnips (or some way of getting pynvim in your global python install, pip complains if you try doing it with pip) \
-LaTeX of some form, i recommend TeXlive \
-a PDF viewer, i use zathura, but anything will work, i recommend something not too heavy.
+LaTeX of some form, I recommend TeXlive \
+a PDF viewer, I use zathura, but anything will work, I recommend something not too heavy.
 
 install instructions are provided, but are for Arch linux, and related distros with the pacman manager. Currently, no provided packages are from the AUR, and can be sourced straight from the package repository from the verified maintainers, so low risk of sccaaaaryy AUR malware.
 
@@ -43,7 +43,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 Put the init.vim file in the .config/nvim folder
 
-I suggest running PlugInstall to install the packages, this will give a "waah you doing have pynvim" error through Ultisnips but we remedy this later:
+I suggest running PlugInstall to install the packages, this will give a "waah you don't have pynvim" error through Ultisnips but we remedy this later:
 within nvim:
 ```
 :PlugInstall
@@ -66,4 +66,4 @@ mkdir ~/.config/nvim/pythonx
 
 Ideally, that's everything :D
 
-Edit the keybinds to your taste, they're a mix of castel.dev's snippets, the Latex Suite plugin for obsidian notes, and whatever i needed for maths/physics courses i took. I preferred to keep everything in one big file, so there's probably some stuff you don't need. Latex Suite was fantastic and if you use Obsidian, i highly recommend using that.
+Edit the keybinds to your taste, they're a mix of castel.dev's snippets, the Latex Suite plugin for obsidian notes, and whatever I needed for maths/physics courses I took. I preferred to keep everything in one big file, so there's probably some stuff you don't need. Latex Suite was fantastic and if you use Obsidian, I highly recommend using that.
